@@ -47,9 +47,9 @@ class ListenableService implements ListenableServiceContract
             return;
         }
 
-        if ($listen->type_id == $this->getListenTypeId($type)) {
-            return;
-        }
+//        if ($listen->type_id == $this->getListenTypeId($type)) {
+//            return;
+//        }
 
         $listen->delete();
 
