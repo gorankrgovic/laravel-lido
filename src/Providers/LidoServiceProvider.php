@@ -18,7 +18,7 @@ use Gox\Contracts\Lido\Listenable\Services\ListenableService as ListenableServic
 use Gox\Laravel\Lido\Listen\Models\Listen;
 use Gox\Laravel\Lido\Listen\Observers\ListenObserver;
 use Gox\Laravel\Lido\Listenable\Services\ListenableService;
-use Gox\Contracts\Lido\ListenCounter\Models\ListenCounter;
+use Gox\Laravel\Lido\ListenCounter\Models\ListenCounter;
 use Illuminate\Support\ServiceProvider;
 
 
