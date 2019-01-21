@@ -1,0 +1,70 @@
+{
+  "name": "gorankrgovic/laravel-lido",
+  "description": "Make Laravel Eloquent models Listenable and Downloadable using UUIDs.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "goran",
+    "krgovic",
+    "laravel",
+    "eloquent",
+    "trait",
+    "listen",
+    "download",
+    "uuid"
+  ],
+  "authors": [
+    {
+      "name": "Goran Krgovic",
+      "email": "gorankrgovic1@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/gorankrgovic/laravel-lido",
+  "support": {
+    "email": "gorankrgovic1@gmail.com",
+    "issues": "https://github.com/gorankrgovic/laravel-lido/issues",
+    "wiki": "https://github.com/gorankrgovic/laravel-lido/wiki",
+    "source": "https://github.com/gorankrgovic/laravel-lido",
+    "docs": "https://github.com/gorankrgovic/laravel-lido/wiki"
+  },
+  "require": {
+    "php": "^7.0",
+    "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+    "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+    "ramsey/uuid": "^3.8"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.10",
+    "mockery/mockery": "^1.0",
+    "orchestra/database": "~3.5.0|~3.6.0|~3.7.0",
+    "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
+    "phpunit/phpunit": "^6.0|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gox\\Contracts\\Lido\\": "contracts/",
+      "Gox\\Laravel\\Lido\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gox\\Tests\\Laravel\\Lido\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gox\\Laravel\\Lido\\Providers\\LidoServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
